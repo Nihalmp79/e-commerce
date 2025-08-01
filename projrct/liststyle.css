@@ -93,7 +93,7 @@ nav{
     font-size: 15px;
 }
 .filter-lap{
-    grid-column: 1/4;
+    grid-column: 2/4;
     position: absolute;
     background: white;
     font-weight: 400;
@@ -103,7 +103,6 @@ nav{
     background: white;
     position: relative;
     grid-column: 3/4;
-    top: px;
     padding: 10px;
     justify-content: center;
 }
@@ -172,6 +171,22 @@ footer{
         min-width: 300px;
     
     }
+    .filter-lap{
+        
+        grid-column: 2/4;
+        position: absolute;
+        background: white;
+        font-weight: 400;
+        padding: 40px;
+    }
+    .list-screen{
+        background: white;
+        position: relative;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
    
 
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoppy/signup</title>
+    <link rel="icon" href="/assets/shoppy.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="/assets/shoppy.ico" alt="shopy_icon">
+        </div>
+        <div class="snav">
+            <div class="home-log">
+                <a href="/home.html"><p>Home</p></a>
+                <a href="#"><img src="/assets/more-icon.jpg" alt="" width="50px" ></a>
+            </div>
+        </div>
+    </div>
+    <h1 class="heading-1">SignUp</h1>
+    <form class="form">
+        <div class="fn-container gutter-small">
+            <label class="d-flex direction-column gap">
+                First Name
+                <input data-key="firstName" class="input" placeholder="FirstName"/>
+            </label>
+            <span data-error="fn-err" class="error-message">
+                Name must only contain alphabets
+            </span>
+            <span class="empty-field">*Please fill this field</span>
+        </div>
+        <div class="in-container gutter-small">
+            <label class="d-flex direction-column gap">
+                Last Name
+                <input data-key="lastName" class="input" placeholder="LastName"/>
+            </label>
+            <span data-error="in-err" class="error-message">
+                Name must only contain alphabets
+            </span>
+            <span class="empty-field">*Please fill this field</span>
+        </div>
+        <div class="email-container gutter-small">
+            <label class="d-flex direction-column gap">
+                Email Id
+                 <input type="email" data-key="email" class="input" placeholder="name@example.com" />
+            </label>
+            <span data-error="email-err" class="error-message">Invalid Email</span>
+            <span class="empty-field">*Please fill this field</span>
+        </div>
+        <div class="pwd-container gutter-small relative">
+            <label class="de-flex direction-column gap">
+                Password
+                <input type="password" data-key="password" class="input" placeholder="***********" />
+                <button class="btn absolute right-0">
+                    <span class="material-icon-outlined">
+                    </span>
+                </button>
+               </label>
+                <ul data-error="pwd-err" class="error-message ul">
+                    <li class="list">
+                        Password must contain atleast 8 characters
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one lower case
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one upper case letter
+                    </li>
+                    <li class="list">
+                        Password must be contain atleast one digit
+                    </li>
+                    <li class="list">
+                        Password must contain atleast one special character (!@#$%^&*)
+                    </li>
+                </ul>
+                <span class="empty-field">*Please fill this field</span>
+        </div>
+        <button class="button btn-primary cursor">Creater Account</button>        
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
